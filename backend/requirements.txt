@@ -1,0 +1,9 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+httpx>=0.27.0
+python-dotenv>=1.0.1
+numpy>=1.26
+pandas>=2.0
+# Optional: enables the Random-Forest predictive-accuracy baseline (comparison
+# only, not causal). The core TWFE/DiD model runs on numpy+pandas alone.
+scikit-learn>=1.3

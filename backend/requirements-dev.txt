@@ -1,0 +1,5 @@
+# Test-only dependencies. Install with:
+#   pip install -r requirements.txt -r requirements-dev.txt
+# then run the suite from the backend directory with:
+#   pytest
+pytest>=8.0

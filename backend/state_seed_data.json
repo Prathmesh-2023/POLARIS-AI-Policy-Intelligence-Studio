@@ -1,0 +1,177 @@
+{
+  "Andaman and Nicobar": {
+    "manufacturing_share": 0.000294,
+    "agri_share": 0.001961,
+    "population_share": 0.000298
+  },
+  "Andhra Pradesh": {
+    "manufacturing_share": 0.053916,
+    "agri_share": 0.068621,
+    "population_share": 0.068653
+  },
+  "Arunachal Pradesh": {
+    "manufacturing_share": 0.00098,
+    "agri_share": 0.003921,
+    "population_share": 0.001094
+  },
+  "Assam": {
+    "manufacturing_share": 0.011764,
+    "agri_share": 0.027448,
+    "population_share": 0.025869
+  },
+  "Bihar": {
+    "manufacturing_share": 0.017645,
+    "agri_share": 0.093128,
+    "population_share": 0.086563
+  },
+  "Chandigarh": {
+    "manufacturing_share": 0.003921,
+    "agri_share": 0.000294,
+    "population_share": 0.000895
+  },
+  "Chhattisgarh": {
+    "manufacturing_share": 0.021567,
+    "agri_share": 0.027448,
+    "population_share": 0.021889
+  },
+  "Dadra and Nagar Haveli": {
+    "manufacturing_share": 0.003921,
+    "agri_share": 0.000392,
+    "population_share": 0.000398
+  },
+  "Daman and Diu": {
+    "manufacturing_share": 0.002941,
+    "agri_share": 0.000196,
+    "population_share": 0.000199
+  },
+  "Delhi": {
+    "manufacturing_share": 0.03431,
+    "agri_share": 0.001961,
+    "population_share": 0.01393
+  },
+  "Goa": {
+    "manufacturing_share": 0.005882,
+    "agri_share": 0.001961,
+    "population_share": 0.001194
+  },
+  "Gujarat": {
+    "manufacturing_share": 0.122537,
+    "agri_share": 0.053916,
+    "population_share": 0.049749
+  },
+  "Haryana": {
+    "manufacturing_share": 0.044113,
+    "agri_share": 0.039212,
+    "population_share": 0.020894
+  },
+  "Himachal Pradesh": {
+    "manufacturing_share": 0.005882,
+    "agri_share": 0.011764,
+    "population_share": 0.00597
+  },
+  "Jammu and Kashmir": {
+    "manufacturing_share": 0.003921,
+    "agri_share": 0.009803,
+    "population_share": 0.00995
+  },
+  "Jharkhand": {
+    "manufacturing_share": 0.024507,
+    "agri_share": 0.021567,
+    "population_share": 0.026864
+  },
+  "Karnataka": {
+    "manufacturing_share": 0.083325,
+    "agri_share": 0.044113,
+    "population_share": 0.050744
+  },
+  "Kerala": {
+    "manufacturing_share": 0.021567,
+    "agri_share": 0.017645,
+    "population_share": 0.027859
+  },
+  "Lakshadweep": {
+    "manufacturing_share": 9.8e-05,
+    "agri_share": 0.000196,
+    "population_share": 5e-05
+  },
+  "Madhya Pradesh": {
+    "manufacturing_share": 0.031369,
+    "agri_share": 0.083325,
+    "population_share": 0.059699
+  },
+  "Maharashtra": {
+    "manufacturing_share": 0.176453,
+    "agri_share": 0.068621,
+    "population_share": 0.092533
+  },
+  "Manipur": {
+    "manufacturing_share": 0.00098,
+    "agri_share": 0.002941,
+    "population_share": 0.002388
+  },
+  "Meghalaya": {
+    "manufacturing_share": 0.00098,
+    "agri_share": 0.002941,
+    "population_share": 0.002487
+  },
+  "Mizoram": {
+    "manufacturing_share": 0.00049,
+    "agri_share": 0.001961,
+    "population_share": 0.000895
+  },
+  "Nagaland": {
+    "manufacturing_share": 0.000588,
+    "agri_share": 0.001961,
+    "population_share": 0.001592
+  },
+  "Orissa": {
+    "manufacturing_share": 0.027448,
+    "agri_share": 0.039212,
+    "population_share": 0.034824
+  },
+  "Puducherry": {
+    "manufacturing_share": 0.002941,
+    "agri_share": 0.00098,
+    "population_share": 0.000995
+  },
+  "Punjab": {
+    "manufacturing_share": 0.027448,
+    "agri_share": 0.053916,
+    "population_share": 0.022884
+  },
+  "Rajasthan": {
+    "manufacturing_share": 0.03431,
+    "agri_share": 0.073522,
+    "population_share": 0.056714
+  },
+  "Sikkim": {
+    "manufacturing_share": 0.000392,
+    "agri_share": 0.00098,
+    "population_share": 0.000497
+  },
+  "Tamil Nadu": {
+    "manufacturing_share": 0.107833,
+    "agri_share": 0.039212,
+    "population_share": 0.059699
+  },
+  "Tripura": {
+    "manufacturing_share": 0.001176,
+    "agri_share": 0.003921,
+    "population_share": 0.002985
+  },
+  "Uttar Pradesh": {
+    "manufacturing_share": 0.068621,
+    "agri_share": 0.137241,
+    "population_share": 0.165166
+  },
+  "Uttaranchal": {
+    "manufacturing_share": 0.009803,
+    "agri_share": 0.011764,
+    "population_share": 0.00796
+  },
+  "West Bengal": {
+    "manufacturing_share": 0.046074,
+    "agri_share": 0.051956,
+    "population_share": 0.075618
+  }
+}
