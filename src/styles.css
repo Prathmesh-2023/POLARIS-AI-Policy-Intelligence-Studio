@@ -1,0 +1,255 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * POLARIS design system — "policy intelligence" light theme.
+ * Cool paper background, deep slate ink, institutional indigo accent.
+ * Light is the default (:root); the `.dark` class on <html> flips to dark.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-chart-1: var(--success);
+  --color-chart-2: var(--warning);
+  --color-chart-3: var(--danger);
+  --color-chart-4: var(--primary);
+  --color-chart-5: var(--muted-foreground);
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.75rem;
+  /* Cool paper background + deep slate ink */
+  --background: oklch(0.977 0.004 258);
+  --foreground: oklch(0.24 0.03 262);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.24 0.03 262);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.03 262);
+  /* Institutional indigo */
+  --primary: oklch(0.52 0.16 268);
+  --primary-foreground: oklch(0.99 0.004 260);
+  --secondary: oklch(0.96 0.006 258);
+  --secondary-foreground: oklch(0.3 0.03 262);
+  --muted: oklch(0.965 0.005 258);
+  --muted-foreground: oklch(0.52 0.022 262);
+  --accent: oklch(0.955 0.02 268);
+  --accent-foreground: oklch(0.34 0.09 268);
+  --destructive: oklch(0.58 0.2 27);
+  --destructive-foreground: oklch(0.99 0.004 260);
+  --border: oklch(0.92 0.006 262);
+  --input: oklch(0.92 0.006 262);
+  --ring: oklch(0.52 0.16 268);
+  /* Data semantics — muted, professional */
+  --success: oklch(0.6 0.13 168);
+  --warning: oklch(0.72 0.14 72);
+  --danger: oklch(0.58 0.2 27);
+  /* Deep-ink sidebar for contrast against the paper canvas */
+  --sidebar: oklch(0.23 0.035 264);
+  --sidebar-foreground: oklch(0.93 0.01 258);
+  --sidebar-primary: oklch(0.74 0.13 268);
+  --sidebar-primary-foreground: oklch(0.16 0.04 264);
+  --sidebar-accent: oklch(0.29 0.04 264);
+  --sidebar-accent-foreground: oklch(0.97 0.008 258);
+  --sidebar-border: oklch(0.31 0.03 264);
+  --sidebar-ring: oklch(0.74 0.13 268);
+}
+
+.dark {
+  --background: oklch(0.19 0.035 264);
+  --foreground: oklch(0.96 0.008 258);
+  --card: oklch(0.235 0.032 264);
+  --card-foreground: oklch(0.96 0.008 258);
+  --popover: oklch(0.235 0.032 264);
+  --popover-foreground: oklch(0.96 0.008 258);
+  --primary: oklch(0.72 0.14 272);
+  --primary-foreground: oklch(0.16 0.04 264);
+  --secondary: oklch(0.29 0.03 264);
+  --secondary-foreground: oklch(0.95 0.008 258);
+  --muted: oklch(0.29 0.03 264);
+  --muted-foreground: oklch(0.7 0.022 258);
+  --accent: oklch(0.32 0.05 268);
+  --accent-foreground: oklch(0.95 0.01 268);
+  --destructive: oklch(0.62 0.2 25);
+  --destructive-foreground: oklch(0.98 0.005 258);
+  --border: oklch(0.32 0.028 264);
+  --input: oklch(0.32 0.028 264);
+  --ring: oklch(0.72 0.14 272);
+  --success: oklch(0.75 0.14 168);
+  --warning: oklch(0.8 0.15 78);
+  --danger: oklch(0.66 0.2 25);
+  --sidebar: oklch(0.155 0.032 266);
+  --sidebar-foreground: oklch(0.9 0.01 258);
+  --sidebar-primary: oklch(0.72 0.14 272);
+  --sidebar-primary-foreground: oklch(0.16 0.04 264);
+  --sidebar-accent: oklch(0.26 0.035 264);
+  --sidebar-accent-foreground: oklch(0.96 0.008 258);
+  --sidebar-border: oklch(0.27 0.028 264);
+  --sidebar-ring: oklch(0.72 0.14 272);
+}
+
+/*
+ * Curated premium palettes, selectable from the TopBar theme switcher.
+ * Each overrides only the tokens it needs; dark palettes are paired with the
+ * `.dark` class (added by the switcher) so the two `dark:` utilities still work.
+ * Source order matters: these come AFTER `.dark` so a dark palette's overrides win.
+ */
+
+/* Warm Sand — editorial light: warm paper, espresso ink, clay accent. */
+:root[data-theme="sand"] {
+  --background: oklch(0.976 0.009 82);
+  --foreground: oklch(0.29 0.021 58);
+  --card: oklch(0.995 0.005 82);
+  --card-foreground: oklch(0.29 0.021 58);
+  --popover: oklch(0.995 0.005 82);
+  --popover-foreground: oklch(0.29 0.021 58);
+  --primary: oklch(0.55 0.115 44);
+  --primary-foreground: oklch(0.99 0.006 82);
+  --secondary: oklch(0.955 0.011 78);
+  --secondary-foreground: oklch(0.34 0.025 56);
+  --muted: oklch(0.958 0.01 78);
+  --muted-foreground: oklch(0.53 0.02 58);
+  --accent: oklch(0.948 0.028 58);
+  --accent-foreground: oklch(0.4 0.08 46);
+  --border: oklch(0.9 0.012 74);
+  --input: oklch(0.9 0.012 74);
+  --ring: oklch(0.55 0.115 44);
+  --success: oklch(0.58 0.11 162);
+  --warning: oklch(0.71 0.13 68);
+  --danger: oklch(0.56 0.19 30);
+  --sidebar: oklch(0.25 0.022 52);
+  --sidebar-foreground: oklch(0.93 0.012 74);
+  --sidebar-primary: oklch(0.74 0.11 52);
+  --sidebar-primary-foreground: oklch(0.18 0.03 52);
+  --sidebar-accent: oklch(0.31 0.026 52);
+  --sidebar-accent-foreground: oklch(0.96 0.01 74);
+  --sidebar-border: oklch(0.33 0.022 52);
+  --sidebar-ring: oklch(0.74 0.11 52);
+}
+
+/* Midnight — premium dark: deep blue-black canvas, refined teal accent. */
+:root[data-theme="midnight"] {
+  --background: oklch(0.16 0.021 248);
+  --foreground: oklch(0.94 0.011 226);
+  --card: oklch(0.205 0.024 252);
+  --card-foreground: oklch(0.94 0.011 226);
+  --popover: oklch(0.205 0.024 252);
+  --popover-foreground: oklch(0.94 0.011 226);
+  --primary: oklch(0.72 0.12 202);
+  --primary-foreground: oklch(0.15 0.03 240);
+  --secondary: oklch(0.26 0.022 252);
+  --secondary-foreground: oklch(0.94 0.011 226);
+  --muted: oklch(0.26 0.022 252);
+  --muted-foreground: oklch(0.7 0.02 220);
+  --accent: oklch(0.3 0.04 208);
+  --accent-foreground: oklch(0.95 0.02 208);
+  --destructive: oklch(0.64 0.2 25);
+  --destructive-foreground: oklch(0.98 0.005 258);
+  --border: oklch(0.29 0.02 250);
+  --input: oklch(0.29 0.02 250);
+  --ring: oklch(0.72 0.12 202);
+  --success: oklch(0.74 0.13 170);
+  --warning: oklch(0.8 0.14 82);
+  --danger: oklch(0.66 0.2 25);
+  --sidebar: oklch(0.13 0.02 250);
+  --sidebar-foreground: oklch(0.9 0.012 226);
+  --sidebar-primary: oklch(0.72 0.12 202);
+  --sidebar-primary-foreground: oklch(0.14 0.03 240);
+  --sidebar-accent: oklch(0.23 0.025 252);
+  --sidebar-accent-foreground: oklch(0.95 0.01 226);
+  --sidebar-border: oklch(0.26 0.02 250);
+  --sidebar-ring: oklch(0.72 0.12 202);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@utility label-eyebrow {
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+  font-weight: 600;
+}
+
+@utility panel {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  box-shadow:
+    0 1px 2px -1px oklch(0.2 0.03 262 / 0.06),
+    0 4px 16px -8px oklch(0.2 0.03 262 / 0.08);
+}
+
+/* --- Print / export one-page brief -------------------------------------- */
+@media print {
+  aside,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+  .panel {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border-color: #dcdce3 !important;
+    padding: 1rem !important;
+    margin-bottom: 0.75rem;
+  }
+}
